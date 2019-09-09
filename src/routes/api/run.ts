@@ -184,6 +184,7 @@ route.post('/', (req, res, next) => {
     }
 
   }).catch(err => {
+    console.log(err)
     res.status(501).json({
       code: 501,
       message: "Could not accept submission",
